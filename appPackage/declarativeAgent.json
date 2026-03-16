@@ -1,0 +1,52 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.6/schema.json",
+    "version": "v1.6",
+    "name": "Zava Procurement",
+    "description": "An agent that helps insurance adjusters streamline the search of the right procurement information by leveraging embedded knowledge from Zava approved partners' network of trusted contractors and service providers.",
+    "instructions": "$[file('instruction.txt')]",
+    "conversation_starters": [
+        {
+            "title": "Water damage restoration pricing",
+            "text": "What are the rates for emergency water extraction and drying services?"
+        },
+        {
+            "title": "Roof repair cost estimate",
+            "text": "I need pricing for a 2,000 sq ft asphalt shingle roof replacement"
+        },
+        {
+            "title": "Find cheapest option",
+            "text": "What's the most cost-effective contractor for basic drywall repair?"
+        },
+        {
+            "title": "Structural repair costs",
+            "text": "What are the rates for foundation repair and structural work?"
+        },
+        {
+            "title": "Claims inspection guidelines",
+            "text": "What are the standard procedures for documenting water damage claims?"
+        },
+        {
+            "title": "Emergency services availability",
+            "text": "Which contractors offer 24/7 emergency response and what are their rates?"
+        }
+    ],
+    "capabilities": [
+        {
+            "name": "EmbeddedKnowledge",
+            "files": [
+                {
+                    "file": "EmbeddedKnowledge/Claims_Inspection_Guidelines.pdf"
+                },
+                {
+                    "file": "EmbeddedKnowledge/Pacific Water Restoration-Pricing.pdf"
+                },
+                {
+                    "file": "EmbeddedKnowledge/Thompson Roofing Solutions-Pricing.pdf"
+                },
+                {
+                    "file": "EmbeddedKnowledge/Wilson General Contractors-Pricing.pdf"
+                }
+            ]
+        }
+    ]
+}
